@@ -1,12 +1,18 @@
 let objectHeight = 200;
 let objectWidth = 200;
+let backgroundColor = changeColor
 
 function setup() {
   createCanvas(400, 400);
 }
 
+function changingColor(newColor) {
+  const elem = document.getElementById("changingColor");
+  elem.style.color = newColor;
+}
+
 function draw() {
-  background("#d3d3d3");
+  backgroundColor(changingColor);
   
   //base
   fill("#fff");
@@ -33,7 +39,4 @@ function draw() {
     square(objectHeight + 30, objectWidth + 30, 20);
     square(objectHeight + 30, objectWidth, 20);
     square(objectHeight + 30, objectWidth - 30, 20);
- 
-  
-  
 }

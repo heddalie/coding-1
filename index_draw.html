@@ -4,6 +4,31 @@
     <meta charset="UTF-8">
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
     <script src="sketch_1.js"></script>
+
+    <script>
+
+
+      /* i tried to implement the same code, but changing the background color instead of the text color
+
+      the code doesnt work, because changeColor, newColor and backgroundColor is not defined
+
+      im not sure how to define them so javascript understands, and i didn't understand when i looked it up
+      id like some feedback in the lecture if theres time */
+
+      
+      // 	Variables
+      let color; 	
+      console.log("newColor variable before:", newColor);
+
+      // 	Main Program
+      color = prompt("Please enter a color.", "");
+      const myElement = document.getElementById("changingColor");
+      myElement.style.color = newColor;
+      console.log("color avriable after assigning:", newColor);
+      
+    </script>
+  
+
   </head>
   <body>
     <main>
