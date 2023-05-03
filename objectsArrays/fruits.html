@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+
+<body>
+    <h2>Javascript Arrays</h2>
+    <h3>This was in my fruit bowl earlier:</h3>
+    <p id="fruitBowl"></p>
+    <h3>This was left after the meal:</h3>
+    <p id="filter"></p>
+    <h3>Although the fruit was eaten in this order:</h3>
+    <p id="reverse"></p>
+</body>
+<script>
+
+    // listing the fruits
+    const fruits = [
+        ' banana',
+        ' melon',
+        ' grape',
+        ' pear',
+        ' apple',
+        ' cherry',
+        ' guanabana',
+        ' watermelon',
+        ' pineapple',
+    ];
+
+    // fruit bowl exercise
+    // This was in my fruit bowl earlier:
+    document.getElementById("fruitBowl").innerHTML = fruits;
+    console.log("fruits:", fruits, fruits.length)
+
+    // filter()
+    // This was left after the meal:
+    const result = fruits.filter(fruits => fruits.length > 7);
+    document.getElementById("filter").innerHTML = result;
+    console.log(result);
+
+    // reverse()
+    // Although the fruit was eaten in this order:
+    const reversed = result.reverse();
+    document.getElementById("reverse").innerHTML = result;
+    console.log('reversed:', reversed);
+
+
+</script>
+
+</html>
